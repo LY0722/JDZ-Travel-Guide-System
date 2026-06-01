@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>瓷都匠艺之旅 API接口文档</title>
+  <style>
+    body { font-family: 'Segoe UI', 'Arial', sans-serif; background: #f9f9f9; margin: 0; padding: 0; }
+    .container { max-width: 900px; margin: 40px auto; background: #fff; border-radius: 12px; box-shadow: 0 4px 24px rgba(0,0,0,0.08); padding: 40px 48px 32px 48px; }
+    h1 { color: #2c3e50; letter-spacing: 2px; margin-bottom: 8px; }
+    h2 { color: #2980b9; margin-top: 32px; margin-bottom: 12px; border-left: 4px solid #2980b9; padding-left: 10px; font-size: 1.3em; }
+    ul { line-height: 2.1; padding-left: 24px; }
+    code { background: #f4f4f4; color: #c7254e; padding: 2px 8px; border-radius: 4px; font-size: 1em; }
+    .tip { background: #eaf6ff; border-left: 4px solid #2980b9; padding: 10px 18px; margin: 24px 0 0 0; color: #2980b9; border-radius: 6px; font-size: 1em; }
+    .footer { margin-top: 40px; color: #888; font-size: 0.95em; text-align: right; }
+    @media (max-width: 600px) { .container { padding: 18px 6px; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>瓷都匠艺之旅 API接口文档</h1>
+    <div class="tip">
+      <b>说明：</b> 所有接口前缀均为 <code>/api/</code>，返回格式为 <code>application/json</code>。
+    </div>
+
+    <h2>用户 User</h2>
+    <ul>
+      <li><code>GET /api/user</code> 获取所有用户</li>
+      <li><code>GET /api/user/:id</code> 获取单个用户</li>
+      <li><code>POST /api/user</code> 新增用户</li>
+      <li><code>PUT /api/user/:id</code> 更新用户</li>
+      <li><code>DELETE /api/user/:id</code> 删除用户</li>
+      <li><code>POST /api/user/upload-avatar</code> 上传用户头像（formData: file）</li>
+    </ul>
+
+    <h2>景点信息 Scenic Spot</h2>
+    <ul>
+      <li><code>GET /api/scenic-spot</code> 获取所有景点</li>
+      <li><code>GET /api/scenic-spot/:id</code> 获取单个景点</li>
+      <li><code>POST /api/scenic-spot</code> 新增景点</li>
+      <li><code>PUT /api/scenic-spot/:id</code> 更新景点</li>
+      <li><code>DELETE /api/scenic-spot/:id</code> 删除景点</li>
+    </ul>
+
+    <h2>体验店 Experience Shop</h2>
+    <ul>
+      <li><code>GET /api/shop</code> 获取所有体验店</li>
+      <li><code>GET /api/shop/:id</code> 获取单个体验店</li>
+      <li><code>POST /api/shop</code> 新增体验店</li>
+      <li><code>PUT /api/shop/:id</code> 更新体验店</li>
+      <li><code>DELETE /api/shop/:id</code> 删除体验店</li>
+    </ul>
+
+    <h2>美食文化 Food Culture</h2>
+    <ul>
+      <li><code>GET /api/food</code> 获取所有美食</li>
+      <li><code>GET /api/food/:id</code> 获取单个美食</li>
+      <li><code>POST /api/food</code> 新增美食</li>
+      <li><code>PUT /api/food/:id</code> 更新美食</li>
+      <li><code>DELETE /api/food/:id</code> 删除美食</li>
+    </ul>
+
+    <h2>帖子 Posts</h2>
+    <ul>
+      <li><code>GET /api/posts</code> 获取所有帖子</li>
+      <li><code>GET /api/posts/:id</code> 获取单条帖子</li>
+      <li><code>GET /api/posts/user/:user_id</code> 获取用户的所有帖子</li>
+      <li><code>POST /api/posts</code> 新增帖子</li>
+      <li><code>PUT /api/posts/:id</code> 更新帖子主图</li>
+      <li><code>DELETE /api/posts/:id</code> 删除帖子</li>
+    </ul>
+
+    <h2>帖子图片 Post Images</h2>
+    <ul>
+      <li><code>GET /api/post-images?post_id=xxx</code> 获取指定帖子的图片</li>
+      <li><code>POST /api/post-images</code> 上传帖子图片（formData: post_id, file）</li>
+      <li><code>DELETE /api/post-images/:id</code> 删除帖子图片</li>
+    </ul>
+
+    <h2>评论 Comments</h2>
+    <ul>
+      <li><code>GET /api/comments</code> 获取所有评论（可用 <code>?post_id=xxx</code> 查询某帖评论）</li>
+      <li><code>GET /api/comments/:id</code> 获取单条评论</li>
+      <li><code>GET /api/comments/user/:user_id</code> 获取用户的所有评论</li>
+      <li><code>POST /api/comments</code> 新增评论</li>
+      <li><code>DELETE /api/comments/:id</code> 删除评论</li>
+    </ul>
+
+    <h2>点赞 Likes</h2>
+    <ul>
+      <li><code>GET /api/likes?post_id=xxx[&user_id=xxx]</code> 获取某帖点赞数和是否点赞</li>
+      <li><code>POST /api/likes</code> 点赞（body: post_id, user_id）</li>
+      <li><code>DELETE /api/likes?post_id=xxx&user_id=xxx</code> 取消点赞</li>
+      <li><code>GET /api/likes/user?user_id=xxx</code> 获取用户点赞的所有帖子</li>
+    </ul>
+
+    <h2>收藏 Favorites</h2>
+    <ul>
+      <li><code>GET /api/favorites</code> 获取所有收藏（可用 <code>?user_id=xxx</code> 查询用户收藏）</li>
+      <li><code>GET /api/favorites/:id</code> 获取单条收藏</li>
+      <li><code>GET /api/favorites/user/:user_id</code> 获取用户的所有收藏</li>
+      <li><code>POST /api/favorites</code> 新增收藏</li>
+      <li><code>DELETE /api/favorites/:id</code> 删除收藏</li>
+    </ul>
+
+    <h2>浏览历史 Browse History</h2>
+    <ul>
+      <li><code>GET /api/browse-history</code> 获取所有浏览历史</li>
+      <li><code>GET /api/browse-history/:id</code> 获取单条浏览历史</li>
+      <li><code>GET /api/browse-history/user/:user_id</code> 获取用户的所有浏览历史</li>
+      <li><code>POST /api/browse-history</code> 新增浏览历史</li>
+      <li><code>DELETE /api/browse-history/:id</code> 删除浏览历史</li>
+    </ul>
+
+    <h2>管理员日志 Admin Logs</h2>
+    <ul>
+      <li><code>GET /api/admin-logs</code> 获取所有管理员日志</li>
+      <li><code>GET /api/admin-logs/:id</code> 获取单条日志</li>
+      <li><code>POST /api/admin-logs</code> 新增日志</li>
+      <li><code>DELETE /api/admin-logs/:id</code> 删除日志</li>
+    </ul>
+
+    <h2>AI问答记录 QA Records</h2>
+    <ul>
+      <li><code>GET /api/qa-records</code> 获取所有问答记录</li>
+      <li><code>GET /api/qa-records/:id</code> 获取单条问答记录</li>
+      <li><code>POST /api/qa-records</code> 新增问答记录</li>
+      <li><code>DELETE /api/qa-records/:id</code> 删除问答记录</li>
+    </ul>
+
+    <h2>评分 Ratings</h2>
+    <ul>
+      <li><code>GET /api/ratings</code> 获取所有评分</li>
+      <li><code>GET /api/ratings/:id</code> 获取单条评分</li>
+      <li><code>POST /api/ratings</code> 新增评分</li>
+      <li><code>DELETE /api/ratings/:id</code> 删除评分</li>
+    </ul>
+
+    <h2>路线规划 Route Plans</h2>
+    <ul>
+      <li><code>GET /api/route-plans</code> 获取所有路线规划</li>
+      <li><code>GET /api/route-plans/:id</code> 获取单条路线规划</li>
+      <li><code>POST /api/route-plans</code> 新增路线规划</li>
+      <li><code>DELETE /api/route-plans/:id</code> 删除路线规划</li>
+    </ul>
+
+    <h2>图片 Images</h2>
+    <ul>
+      <li><code>GET /api/images?related_id=xxx&related_type=xxx</code> 获取相关图片</li>
+    </ul>
+
+    <h2>通用搜索 Search</h2>
+    <ul>
+      <li><code>POST /api/search</code> 通用搜索（body: <code>{ query, type }</code>）</li>
+    </ul>
+
+    <div class="footer">
+      &copy; 2025 瓷都匠艺之旅 后端API文档
+    </div>
+  </div>
+</body>
+</html>

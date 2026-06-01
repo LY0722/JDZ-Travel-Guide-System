@@ -1,0 +1,230 @@
+
+  /* 全局样式 */
+page {
+    background-color: #f5f5f5;
+    font-family: 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+}
+
+  /* 首页容器 */
+.home-container {
+    padding-bottom: 20rpx;
+}
+
+  /* 轮播图样式 */
+.swiper {
+    width: 100%;
+    height: 350rpx;
+}
+.swiper-image {
+    width: 100%;
+    height: 100%;
+}
+
+  /* 搜索框样式 */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50rpx;
+    padding: 15rpx 30rpx;
+    margin: 20rpx 30rpx;
+    box-shadow: 0 4rpx 12rpx rgba(0, 180, 216, 0.1);
+}
+.search-input {
+    flex: 1;
+    font-size: 28rpx;
+    color: #666;
+}
+.icon-search {
+    color: #00B4D8;
+    font-size: 36rpx;
+}
+
+  /* 功能入口样式 */
+.function-grid {
+    display: flex;
+    justify-content: space-around;
+    padding: 30rpx 0;
+    background-color: #fff;
+    margin: 20rpx 30rpx;
+    border-radius: 20rpx;
+    box-shadow: 0 4rpx 12rpx rgba(0, 180, 216, 0.1);
+}
+.function-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.function-icon {
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rpx;
+}
+.function-icon .iconfont {
+    color: #fff;
+    font-size: 48rpx;
+}
+.function-text {
+    font-size: 24rpx;
+    color: #666;
+}
+
+  /* 分区标题样式 */
+.section {
+    background-color: #fff;
+    margin: 30rpx;
+    border-radius: 20rpx;
+    padding: 20rpx;
+    box-shadow: 0 4rpx 12rpx rgba(0, 180, 216, 0.1);
+}
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20rpx;
+}
+.section-title {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #333;
+}
+.section-more {
+    font-size: 24rpx;
+    color: #FF6B6B;
+}
+
+  /* 景点滚动样式 */
+.scroll-view {
+    white-space: nowrap;
+    width: 100%;
+}
+.spot-item {
+    display: inline-block;
+    width: 280rpx;
+    margin-right: 20rpx;
+    background-color: #f9f9f9;
+    border-radius: 12rpx;
+    overflow: hidden;
+}
+.spot-image {
+    width: 100%;
+    height: 180rpx;
+}
+.spot-info {
+    padding: 15rpx;
+}
+.spot-name {
+    font-size: 26rpx;
+    color: #333;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.spot-rating {
+    display: flex;
+    align-items: center;
+    margin: 8rpx 0;
+    font-size: 24rpx;
+    color: #ffb400;
+}
+.spot-rating .iconfont {
+    margin-right: 5rpx;
+}
+.spot-address {
+    font-size: 22rpx;
+    color: #999;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+  /* 非遗店铺样式 */
+.shop-list {
+    display: flex;
+    flex-direction: column;
+}
+.shop-item {
+    display: flex;
+    margin-bottom: 20rpx;
+    padding-bottom: 20rpx;
+    border-bottom: 1rpx solid #eee;
+}
+.shop-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.shop-image {
+    width: 200rpx;
+    height: 150rpx;
+    border-radius: 12rpx;
+}
+.shop-detail {
+    flex: 1;
+    margin-left: 20rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.shop-name {
+    font-size: 28rpx;
+    color: #333;
+    font-weight: bold;
+}
+.shop-type {
+    font-size: 24rpx;
+    color: #00B4D8;
+    background-color: rgba(0, 180, 216, 0.1);
+    padding: 4rpx 12rpx;
+    border-radius: 20rpx;
+    align-self: flex-start;
+}
+.shop-price {
+    font-size: 26rpx;
+    color: #ff6b6b;
+}
+.shop-rating {
+    display: flex;
+    align-items: center;
+    font-size: 24rpx;
+    color: #ffb400;
+}
+.shop-rating .iconfont {
+    margin-right: 5rpx;
+}
+
+  /* 美食卡片样式 */
+.food-card {
+    background-color: #f9f9f9;
+    border-radius: 12rpx;
+    overflow: hidden;
+}
+.food-image {
+    width: 100%;
+    height: 300rpx;
+}
+.food-content {
+    padding: 20rpx;
+}
+.food-title {
+    font-size: 30rpx;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10rpx;
+    display: block;
+}
+.food-desc {
+    font-size: 26rpx;
+    color: #666;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

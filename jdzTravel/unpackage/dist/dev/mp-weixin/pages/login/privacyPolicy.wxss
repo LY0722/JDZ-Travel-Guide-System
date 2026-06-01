@@ -1,0 +1,42 @@
+
+.policy-container.data-v-a97fa99d {
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.policy-header.data-v-a97fa99d {
+  padding: 30rpx;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.title.data-v-a97fa99d {
+  font-size: 36rpx;
+  font-weight: bold;
+  text-align: center;
+}
+.policy-content.data-v-a97fa99d {
+  flex: 1;
+  padding: 40rpx;
+  width:90%;
+}
+.content-text.data-v-a97fa99d {
+  font-size: 28rpx;
+  line-height: 2;
+  color: #333;
+  white-space: pre-line;
+  padding:20rpx;
+}
+.policy-footer.data-v-a97fa99d {
+  padding: 30rpx;
+}
+.agree-btn.data-v-a97fa99d {
+  background-color: #00B4D8;
+  color: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  font-size: 30rpx;
+}
+button.data-v-a97fa99d::after {
+  border: none;
+}

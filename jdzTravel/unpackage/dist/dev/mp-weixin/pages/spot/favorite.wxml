@@ -1,0 +1,1 @@
+<view class="favorite-btn data-v-699dbe84" bindtap="{{c}}"><uni-icons wx:if="{{a}}" class="data-v-699dbe84" u-i="699dbe84-0" bind:__l="__l" u-p="{{a}}"></uni-icons><text class="favorite-text data-v-699dbe84">{{b}}</text></view>

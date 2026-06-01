@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "非遗体验店详情",
+  "usingComponents": {
+    "favorite": "./favorite",
+    "uni-icons": "../../node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons"
+  }
+}

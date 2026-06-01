@@ -1,0 +1,122 @@
+
+.food-detail-container {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+.swiper-container {
+  width: 100%;
+  height: 340rpx;
+  position: relative;
+}
+.food-swiper {
+  width: 100%;
+  height: 340rpx;
+}
+.food-main-image {
+  width: 100%;
+  height: 340rpx;
+  object-fit: cover;
+  border-bottom-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx;
+  box-shadow: 0 8rpx 24rpx rgba(0,0,0,0.08);
+}
+.food-info-card {
+  background: #fff;
+  margin: -40rpx 30rpx 20rpx 30rpx;
+  border-radius: 18rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0,180,216,0.08);
+  padding: 36rpx 28rpx 28rpx 28rpx;
+  position: relative;
+  z-index: 2;
+}
+.food-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18rpx;
+}
+.food-name {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #222;
+  flex: 1;
+  margin-right: 20rpx;
+}
+.food-rating {
+  display: flex;
+  align-items: center;
+}
+.rating-num {
+  font-size: 26rpx;
+  color: #ffb400;
+  margin-left: 8rpx;
+  font-weight: bold;
+}
+.info-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14rpx;
+}
+.info-text {
+  font-size: 26rpx;
+  color: #666;
+  margin-left: 10rpx;
+}
+.price-text {
+  color: #FF6B6B;
+  font-weight: bold;
+}
+.section {
+  background: #fff;
+  margin: 0 30rpx 30rpx 30rpx;
+  border-radius: 18rpx;
+  box-shadow: 0 4rpx 16rpx rgba(0,180,216,0.06);
+  padding: 28rpx;
+}
+.section-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #00B4D8;
+  margin-bottom: 16rpx;
+}
+.desc-text {
+  font-size: 28rpx;
+  color: #444;
+  line-height: 1.8;
+  word-break: break-all;
+}
+.loading-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400rpx;
+  color: #999;
+  font-size: 28rpx;
+}
+.action-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 -4rpx 12rpx rgba(0,0,0,0.08);
+  z-index: 100;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.action-bar.favorite-active {
+  background: #ffeded; /* 收藏后变色，可自定义 */
+}
+.favorite-big-text {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #00B4D8; /* 默认蓝色 */
+}
+.action-bar.favorite-active .favorite-big-text {
+  color: #ff6b6b; /* 收藏后变红色 */
+}

@@ -1,0 +1,1 @@
+<view class="my-list-container"><view class="title">我的收藏</view><view wx:if="{{a}}" class="empty">暂无收藏</view><view class="post-list"><view wx:for="{{b}}" wx:for-item="item" wx:key="c" class="post-item" bindtap="{{item.d}}"><text class="post-title">{{item.a}}</text><text class="post-time">{{item.b}}</text></view></view></view>

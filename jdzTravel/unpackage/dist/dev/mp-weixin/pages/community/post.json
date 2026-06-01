@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "发布帖子",
+  "usingComponents": {
+    "uni-icons": "../../node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons"
+  }
+}

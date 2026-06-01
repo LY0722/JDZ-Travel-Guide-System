@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "景德镇美食列表",
+  "usingComponents": {
+    "uni-icons": "../../node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons"
+  }
+}

@@ -1,0 +1,83 @@
+
+.register-container.data-v-838b72c9 {
+  min-height: 100vh;
+  background-color: #F5F7FA;
+}
+.register-header.data-v-838b72c9 {
+  padding: 60rpx 40rpx;
+  padding-top: 120rpx;
+  border-bottom-left-radius: 40rpx;
+  border-bottom-right-radius: 40rpx;
+  color: #fff;
+}
+.welcome-text.data-v-838b72c9 {
+  font-size: 48rpx;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10rpx;
+}
+.sub-text.data-v-838b72c9 {
+  font-size: 28rpx;
+  opacity: 0.9;
+}
+.register-form.data-v-838b72c9 {
+  padding: 60rpx 40rpx;
+  margin: 40rpx;
+  margin-top: -40rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  box-shadow: 0 4rpx 20rpx rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+}
+.form-item.data-v-838b72c9 {
+  display: flex;
+  align-items: center;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #f1f1f1;
+}
+.form-input.data-v-838b72c9 {
+  flex: 1;
+  font-size: 28rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  margin: 0 20rpx;
+}
+.agreement.data-v-838b72c9 {
+  margin-top: 40rpx;
+  font-size: 24rpx;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+.agreement-link.data-v-838b72c9 {
+  color: #00B4D8;
+}
+.register-btn.data-v-838b72c9 {
+  background-color: #00B4D8;
+  color: #fff;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 45rpx;
+  font-size: 32rpx;
+  margin-top: 60rpx;
+}
+.register-btn[disabled].data-v-838b72c9 {
+  background-color: #CCCCCC;
+  color: #fff;
+}
+button.data-v-838b72c9::after {
+  border: none;
+}
+.login-link.data-v-838b72c9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+.login-text.data-v-838b72c9 {
+  color: #00B4D8;
+  margin-left: 10rpx;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "瓷都匠艺之旅",
+  "usingComponents": {
+    "uni-icons": "../../node-modules/@dcloudio/uni-ui/lib/uni-icons/uni-icons"
+  }
+}
