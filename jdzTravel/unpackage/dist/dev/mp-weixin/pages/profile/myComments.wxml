@@ -1,1 +1,0 @@
-<view class="my-list-container"><view class="title">我的评论</view><view wx:if="{{a}}" class="empty">暂无评论</view><view class="comment-list"><view wx:for="{{b}}" wx:for-item="item" wx:key="c" class="comment-item" bindtap="{{item.d}}"><text class="comment-content">{{item.a}}</text><text class="comment-time">{{item.b}}</text></view></view></view>

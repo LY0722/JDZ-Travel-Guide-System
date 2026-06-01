@@ -1,1 +1,0 @@
-<view class="my-list-container"><view class="title">我的帖子</view><view wx:if="{{a}}" class="empty">暂无帖子</view><view class="post-list"><view wx:for="{{b}}" wx:for-item="post" wx:key="c" class="post-item" bindtap="{{post.d}}"><text class="post-title">{{post.a}}</text><text class="post-time">{{post.b}}</text></view></view></view>

@@ -1,1 +1,0 @@
-{"version":3,"file":"userAgreement.js","sources":["D:/AAADownload_soft/HBuilderX/plugins/uniapp-cli-vite/uniPage:/cGFnZXMvbG9naW4vdXNlckFncmVlbWVudC52dWU"],"sourcesContent":["import MiniProgramPage from 'C:/Users/26405/Desktop/jdzTravel/jdzTravel/pages/login/userAgreement.vue'\nwx.createPage(MiniProgramPage)"],"names":[],"mappings":";;;;;;;;;;;;;;;AACA,GAAG,WAAW,eAAe;"}
